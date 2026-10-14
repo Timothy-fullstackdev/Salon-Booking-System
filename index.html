@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geomini:wght@200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tenor+Sans&family=Valley+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <style>
+    .services {
+      width: 100%;
+      max-width: 400px;
+      background-color: rgba(238, 235, 235, 0.548);
+      margin: auto;
+      border-radius: 12px;
+      padding: 10px 10px;
+    }
+
+    .services label {
+      display: block;
+      font-weight: bold;
+      margin: 5px 0 5px 0;
+    }
+
+    .services input, textarea {
+      width: 100%;
+      padding: 3px;
+    }
+    .services input{
+      padding: 6px;
+      font-size: 14px;
+    }
+    input [type="text"] {
+      background-color: red;
+    }
+    .services button {
+      width: 90%;
+      display: block;
+      margin: 10px auto;
+      padding: 8px;
+      font-weight: bold;
+      background-color: rgba(216, 162, 139, 0.918);
+      border-radius: 6px;
+      color: white;
+      cursor: pointer;
+      border: none;
+      transition: background;
+    }
+
+    .services button:hover {
+      background-color: rgba(232, 111, 60, 0.887);
+color: #666;
+transition: 0.3s ease-out;
+    }
+  </style>
+  <body>
+    <!--create account form-->
+  <section id="create_user_account"></section>
+
+    <section id="sign_in_form"></section>
+
+    <section id="dashboard"></section>
+  <!-- 
+
+   <section id="admin">
+      <h1>welcome admin</h1>
+<br>
+      <h3>Create a service</h3>
+      <br>
+      <div class="services">
+        <label for="">Name of service:</label>
+        <input type="text" placeholder="Service name" id="service_name">
+         
+
+          <label for="">Describe the service:</label>
+          <textarea name="" id="service_desription" placeholder="Description" rows="5"></textarea>
+          <label for="">Select an Image:</label>
+          <input type="file">
+          <button type="submit">Create service</button>
+      </div> 
+    </section>
+
+    <section id="serviceRendered">
+
+    </section>
+    
+    <script>
+      //send service to services and post it to mongo
+      const service_name = document.querySelector("#service_name");
+      const service_description = document.querySelector("#service_description");
+      const servicesContainer = document.querySelector("#services");
+      console.log(service_name)
+
+    </script>
+-->
+    <script src="script.js"></script>
+
+  </body>
+</html>

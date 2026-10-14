@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --blue: #1769ff;
+  --purple-light: hsla(315, 84%, 85%, 0.156);
+  --text: #172033;
+  --muted: #71809a;
+  --border: #e5ebf5;
+  --background: #f7f9fd;
+  --white: #ffffff;
+  --shadow: 0 5px 22px rgba(31, 48, 79, 0.055);
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  background-color: var(--background);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px;
+}
+.img_container {
+  height: 150px;
+}
+form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 500px;
+  padding: 2.5%;
+  box-shadow: 2px 3px 12px rgba(33, 31, 31, 0.231);
+  border-radius: 16px;
+}
+form input {
+  font-size: 12px;
+  padding: 5px;
+  margin-bottom: 6px;
+  border: none;
+  outline: 2px solid rgba(191, 205, 206, 0.28);
+  border-radius: 5px;
+  color: #333;
+}
+
+#sign_in_form {
+  display: none;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="search"] {
+  /* Your shared styles here */
+  border: 1px solid #ccc;
+  padding: 8px;
+  width: 100%;
+}
+form span {
+  font-size: 13px;
+}
+input [type="text"] {
+  display: block;
+}
+
+#posts form #post {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+button.logo {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  color: #4f4242;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: pink;
+  color: rgb(100, 91, 91);
+}
+
+button#createaccount,
+#displaySignInForm {
+  width: 100%;
+  border: none;
+  color: #4f4242;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 13px;
+  padding: 6px;
+  margin: 10px 0;
+  background-color: rgb(237, 166, 203);
+}
+#displaySignInForm:hover {
+  background-color: #333;
+color: white;
+transition: 0.3s ease-in;
+}
+#createaccount:hover{
+  background-color: #333;
+  color: white;
+transition: 0.3s ease-in;
+
+}
+
+#posts textarea {
+  width: 100%;
+  height: 200px;
+}
+
+h4.createh4 {
+  margin-bottom: 15px;
+}
+
+form p {
+  font-size: 15px;
+}
+form a {
+  font-size: 14px;
+}
+
+#dashboard {
+  background-color: var(--background);
+}
+#dashwrapper {
+  display: flex;
+}
+
+#dahsboard-content {
+  padding: 15px;
+}
+
+.appointments .card {
+  border: 1px solid black;
+  height: 150px;
+  border-radius: 12px;
+}
+
+#dashwrapper .aside_left {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 200px;
+  height: 100dvh;
+  background-color: var(--purple-light);
+  overflow: hidden;
+}
+
+.left .nav_items {
+  list-style: none;
+}
+
+.left .nav_items li {
+  padding: 12px 15px;
+  background-color: hsla(26, 80%, 36%, 0.113);
+  margin: 0 0 3px 0;
+  color: #666;
+  display: block;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: 500;
+}
+.left .nav_items li:hover {
+  background-color: var(--blue-light);
+}
+
+#userProfile {
+  padding: 0 0 40px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+#userProfile p {
+  font-size: 13px;
+  color: var(--muted);
+}
+#userProfile .imgContainer {
+  width: 80px;
+  height: 80px;
+  border: 3px solid rgb(228, 220, 220);
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+}
